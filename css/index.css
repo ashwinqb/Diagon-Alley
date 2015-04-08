@@ -5,11 +5,12 @@
 	height:321px;
 	margin:0 auto;
 	position:relative;
-	z-index:1;
-	
+	z-index:100;
+	margin-top:15%;
 	-moz-perspective: 800px;
 	-webkit-perspective: 800px;
 	perspective: 800px;
+	display:none;
 }
 
 #LoginFormContainer form{
@@ -120,6 +121,9 @@
 	right:auto;
 	left:0;
 }
+#recoverPassword #recoverEmail {
+    top: 215px;
+}
 
 #login:after{
 	/* The "Click here" tooltip */
@@ -132,7 +136,7 @@
 	top:22px;
 }
 
-input[type=text],input[type=password]{
+#LoginFormContainer input[type=text],input[type=password]{
 	/* The text fields */
 	font: 15px 'Segoe UI',Arial,sans-serif;
 	border: none;
@@ -156,7 +160,7 @@ input[type=text],input[type=password]{
 	top:215px;
 }
 
-input[type=submit]{
+#LoginFormContainer input[type=submit]{
 	
 	/* Submit button */
 	
@@ -191,11 +195,11 @@ input[type=submit]{
 	);
 }
 
-input[type=submit]:hover{
+#LoginFormContainer input[type=submit]:hover{
 	opacity:1;
 }
 
-input::-webkit-input-placeholder {
+#LoginFormContainer input::-webkit-input-placeholder {
     color:#eee;
 }
 

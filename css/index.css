@@ -204,7 +204,7 @@ background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat,center;
 background-size:100%,100%;
 }
 .logo{
-	 position:absolute;
+	 position:absolute
 	background-image: url("../images/Deathly_Hallows.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;

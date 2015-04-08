@@ -204,15 +204,27 @@
 }
 
 body{
-background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat,center;
+background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat;
 background-size:100%,100%;
+background-color: yellow;
+
 }
+.divider{
+	height: 1px;
+	width:50%;
+	background-color: #fff;
+	
+}
+
 .logo{
-	 position:absolute
+	position:absolute;
 	background-image: url("../images/Deathly_Hallows.png");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
+	height: 60px;
+	width: 60px;
 	left: 50%;
+	top:5%;
+box-shadow:black;
+display: inline;
 }

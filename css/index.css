@@ -264,30 +264,52 @@ background-size:100%,100%;
 }
 .divider{
 	height: 1px;
-	width:46%;
+	width:42%;
 	background-color: #fff; 
 	position: absolute;
 	opacity:0.5;
 	
 }
 .d-alignl{
-	top:6%;
+	margin-top:30px;
 	left:0%;
 }
 .d-alignr{
-	top:6%;
+	margin-top:30px;
 	right:0%;
+}
+.site-name{
+	
+	color:white;
+	opacity:0.8;
+	height: auto;
+	width:auto;
+	left: 43%;
+	margin-top:2px;
+	position:absolute;
+text-align:center;
+text-shadow:black;
+	font-family:sans-serif;
+	font-weight: 900;
+	font-style:oblique;
+	font-stretch:ultra-expanded;
+	font-variant:small-caps;
+	font-size: 25px;
+}
+.site-name span{
+	font-size: 11px;
+	display: block;
 }
 .logo{
 	position:absolute;
-	background-image: url("../images/Deathly_Hallows.png");
+	background-image: url("../images/deathly_hallows_by_amylovespenguins-d83w2f1.gif");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	height: 60px;
-	width: 60px;
-	left: 48%;
-	top:2.5%;
+	height: 100px;
+	width: 100px;
+	left: 46%;
+	margin-top:100px;
 box-shadow:black;
 display: inline;
-opacity:0.5;
+opacity:0.3;
 }

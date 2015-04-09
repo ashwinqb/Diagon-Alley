@@ -1,5 +1,11 @@
 @CHARSET "UTF-8";
 
+
+@font-face {
+    font-family: HpFont;
+    src: url("../fonts/HarryP.TTF");
+}
+
 #loginTabWrap{
 	color: #fff;
 	font-size: 14px;
@@ -17,6 +23,7 @@
 	margin-right: 10px;
 	
 }
+
 #LoginFormContainer{
 	width:288px;
 	height:321px;
@@ -289,14 +296,15 @@ background-size:100%,100%;
 	position:absolute;
 text-align:center;
 text-shadow:black;
-	font-family:sans-serif;
+	font-family:HpFont;
 	font-weight: 900;
 	font-style:oblique;
 	font-stretch:ultra-expanded;
 	font-variant:small-caps;
-	font-size: 25px;
+	font-size: 35px;
 }
 .site-name span{
+	font-family:serif;
 	font-size: 11px;
 	display: block;
 }
@@ -311,5 +319,5 @@ text-shadow:black;
 	margin-top:100px;
 box-shadow:black;
 display: inline;
-opacity:0.3;
+opacity:0.2;
 }

@@ -211,11 +211,20 @@ background-color: yellow;
 }
 .divider{
 	height: 1px;
-	width:50%;
-	background-color: #fff;
+	width:46%;
+	background-color: #fff; 
+	position: absolute;
+	opacity:0.5;
 	
 }
-
+.d-alignl{
+	top:6%;
+	left:0%;
+}
+.d-alignr{
+	top:6%;
+	right:0%;
+}
 .logo{
 	position:absolute;
 	background-image: url("../images/Deathly_Hallows.png");
@@ -223,8 +232,9 @@ background-color: yellow;
 	background-repeat: no-repeat;
 	height: 60px;
 	width: 60px;
-	left: 50%;
-	top:5%;
+	left: 48%;
+	top:2.5%;
 box-shadow:black;
 display: inline;
+opacity:0.5;
 }

@@ -1,5 +1,10 @@
 @CHARSET "UTF-8";
 
+@font-face {
+    font-family: HpFont;
+    src: url("../fonts/HarryP.TTF");
+}
+
 #LoginFormContainer{
 	width:288px;
 	height:321px;
@@ -236,14 +241,15 @@ background-color: yellow;
 	position:absolute;
 text-align:center;
 text-shadow:black;
-	font-family:sans-serif;
+	font-family:HpFont;
 	font-weight: 900;
 	font-style:oblique;
 	font-stretch:ultra-expanded;
 	font-variant:small-caps;
-	font-size: 25px;
+	font-size: 35px;
 }
 .site-name span{
+	font-family:serif;
 	font-size: 11px;
 	display: block;
 }

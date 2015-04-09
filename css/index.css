@@ -1,16 +1,70 @@
 @CHARSET "UTF-8";
 
+#loginTabWrap{
+	color: #fff;
+	font-size: 14px;
+	line-height:1.25;
+	font-weight: bolder; 
+	float:right;
+	position:relative;
+	margin: 5px 10px 10px;
+	display: block;
+}
+
+#loginTabWrap a {
+	border-radius:3px;
+	padding: 5px;
+	margin-right: 10px;
+	
+}
 #LoginFormContainer{
 	width:288px;
 	height:321px;
 	margin:0 auto;
-	position:relative;
+	position:absolute;
 	z-index:100;
 	margin-top:15%;
 	-moz-perspective: 800px;
 	-webkit-perspective: 800px;
 	perspective: 800px;
 	display:none;
+	left:40%;
+}
+
+#loginSearchWrap{
+	width: 130px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	display:block;
+	margin-top: 5px;
+}
+
+.searchForm{
+	width: 130px;
+	margin: 0px;
+	padding: 0px;
+}
+.searchForm input[type=search] {
+	padding: 0px;
+	margin:0px;
+	position: relative;
+	width: 110px;
+	border-radius:0px;
+}
+
+
+.searchForm input[type=submit] {
+	background-image: url("../images/search.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin:0px;
+	position: absolute;
+	width: 20px;
+	border-radius:0px;
+
+
 }
 
 #LoginFormContainer form{
@@ -206,7 +260,6 @@
 body{
 background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat;
 background-size:100%,100%;
-background-color: yellow;
 
 }
 .divider{

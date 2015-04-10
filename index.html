@@ -3,23 +3,48 @@
 <head>
 <meta charset="UTF-8">
 <title>Diagon Alley</title>
-  <link rel="stylesheet" href="css/index.css" />
-  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src="js/script.js"></script>
+<link rel="stylesheet" href="css/index.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="js/script.js"></script>
 </head>
 <body>
-	  <div id="LoginFormContainer">
+
+	
+		<div id="loginTabWrap">
+			<a class="linkToLogin">Login</a> <a class="linkToLogin">Signup</a>
+		</div>
+		<div class="white-wrap">
+			<div class="divider d-alignl"></div>
+			<div class="site-name">
+				<span>est:1886</span>Diagon-Alley<span>india</span>
+			</div>
+			<div class="divider d-alignr"></div>
+		</div>
+		<div id="LoginFormContainer">
 			<form id="login" method="post">
-				<a href="#" id="flipToRecover" class="flipLink">Forgot?</a>
-				<input type="text" name="loginEmail" id="loginEmail" placeholder="Email" />
-				<input type="password" name="loginPass" id="loginPass" placeholder="password" />
-				<input type="submit" name="submit" value="Login" />
+				<a href="#" id="flipToRecover" class="flipLink">Forgot?</a> <input
+					type="text" name="loginEmail" id="loginEmail" placeholder="Email" />
+				<input type="password" name="loginPass" id="loginPass"
+					placeholder="password" /> <input type="submit" name="submit"
+					value="Login" />
 			</form>
 			<form id="recoverPassword" method="post">
-				<a href="#" id="flipToLogin" class="flipLink">Forgot?</a>
-				<input type="text" name="recoverEmail" id="recoverEmail" placeholder="Email" />
-				<input type="submit" name="submit" placeholder="Recover" />
+				<a href="#" id="flipToLogin" class="flipLink">Forgot?</a> <input
+					type="text" name="recoverEmail" id="recoverEmail"
+					placeholder="Email" /> <input type="submit" name="submit"
+					placeholder="Recover" />
 			</form>
 		</div>
+
+		<div class="logo"></div>
+	
+	<div id="loginSearchWrap">
+	<form name="searchForm" class="searchForm">
+		<input type="text" required>
+		<input type="reset" value="x">
+	</form>	
+</div>
+
+
 </body>
 </html>

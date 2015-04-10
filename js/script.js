@@ -41,11 +41,4 @@ $(function(){
 		
 		return false;
 	}
-	
-	//To display the login form on the click of the login button
-	$('.linkToLogin').click(function(){
-		$('#LoginFormContainer').show();
-	});
-	
-	
 });

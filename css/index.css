@@ -1,108 +1,15 @@
 @CHARSET "UTF-8";
 
-
-@font-face {
-    font-family: HpFont;
-    src: url("../fonts/HarryP.TTF");
-}
-
-@font-face {
-    font-family: Font0;
-    src: url("../fonts/Exo-Light.otf");
-}
-
-#loginTabWrap{
-	color: #fff;
-	font-size: 14px;
-	line-height:1.25;
-	font-weight: bolder; 
-	float:right;
-	position:relative;
-	margin: 5px 10px 10px;
-	display: block;
-}
-
-#loginTabWrap a {
-	border-radius:3px;
-	padding: 5px;
-	margin-right: 10px;
-	font-family: Font0;
-}
-
 #LoginFormContainer{
 	width:288px;
 	height:321px;
 	margin:0 auto;
-	position:absolute;
-	z-index:100;
-	margin-top:15%;
+	position:relative;
+	z-index:1;
+	
 	-moz-perspective: 800px;
 	-webkit-perspective: 800px;
 	perspective: 800px;
-	display:none;
-	left:40%;
-}
-
-#loginSearchWrap {
-	text-align: center;
-	clear: both;
-}
-
-.searchForm {
-	position: relative;
-	display: inline-block;
-	margin: 3px auto;
-	float: right;
-	
-	
-}
-
-input {  outline: none }
-.searchForm input[type="text"] {
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
-	box-sizing: content-box;
-	background: transparent;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	height: 15px;
-	border: 1px solid white;
-	width: 100px;
-	padding: 3px 23px 3px 8px;
-}
-
-.searchForm input[type="reset"] {
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAGFBMVEUAAAC/v7+/v7+/v7+/v7+/v7+/v7+/v7+hAPa4AAAAB3RSTlMAQNCwkKDgPaU3lgAAAEZJREFUeNplj9EKACAIA2dm+/8/bkj4sI6wDsIpRCRFBprNxx4bD12LrwRSDxRZkCcoCqVDIW1v+9Q+W6sOOhNkY9iQtsIFhO0DtcbsWN0AAAAASUVORK5CYII=');
-	width: 13px;
-	height: 13px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 0;
-	text-indent: -999px;
-	position: absolute;
-	right: 8px;
-	top: 6px;
-	cursor: pointer;
-	border-color: white;
-	border: 1px 1px solid
-}
-
-.searchForm input[type="text"]:invalid {
-	outline: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAIVBMVEW/v7+/v78AAAC/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v79QUkolAAAAC3RSTlOLYAAJeoMjRhpOcbsbtd4AAABJSURBVHjaVc1JDsAgDATB9uAF8v8Hx0QcSN9KssZI5eClDj18PRsFlmlQDcfUGd6A3EgYP1xncQ+sa5qYOk9jRQt1Y0izhU5bL2o2AW3ZQKeJAAAAAElFTkSuQmCC) 10px 6px no-repeat;
-}
-.searchForm input[type="text"]:invalid + input[type="reset"] {
-	visibility:hidden;
-}
-
-.searchForm input[type="text"]:FOCUS{
-	width: 170px;
-	
 }
 
 #LoginFormContainer form{
@@ -213,9 +120,6 @@ input {  outline: none }
 	right:auto;
 	left:0;
 }
-#recoverPassword #recoverEmail {
-    top: 215px;
-}
 
 #login:after{
 	/* The "Click here" tooltip */
@@ -228,7 +132,7 @@ input {  outline: none }
 	top:22px;
 }
 
-#LoginFormContainer input[type=text],input[type=password]{
+input[type=text],input[type=password]{
 	/* The text fields */
 	font: 15px 'Segoe UI',Arial,sans-serif;
 	border: none;
@@ -252,7 +156,7 @@ input {  outline: none }
 	top:215px;
 }
 
-#LoginFormContainer input[type=submit]{
+input[type=submit]{
 	
 	/* Submit button */
 	
@@ -287,72 +191,11 @@ input {  outline: none }
 	);
 }
 
-#LoginFormContainer input[type=submit]:hover{
+input[type=submit]:hover{
 	opacity:1;
 }
 
-#LoginFormContainer input::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
     color:#eee;
-}
-
-body{
-background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat;
-background-size:cover;
-background-position: center center;
-background-attachment: fixed;
-
-}
-.divider{
-	height: 1px;
-	width:42%;
-	background-color: #fff; 
-	position: absolute;
-	opacity:0.5;
-	
-}
-.d-alignl{
-	margin-top:30px;
-	left:0%;
-}
-.d-alignr{
-	margin-top:30px;
-	right:0%;
-}
-.site-name{
-	
-	color:white;
-	opacity:0.8;
-	height: auto;
-	width:auto;
-	left: 43%;
-	margin-top:2px;
-	position:absolute;
-text-align:center;
-text-shadow:black;
-	font-family:HpFont;
-	font-weight: 900;
-	font-style:oblique;
-	font-stretch:ultra-expanded;
-	font-variant:small-caps;
-	font-size: 35px;
-}
-.site-name span{
-	font-family:serif;
-	font-size: 11px;
-	display: block;
-}
-.logo{
-	position:fixed;
-	
-	background-image: url("../images/deathly_hallows_by_amylovespenguins-d83w2f1.gif");
-	background-size:100% 100%;
-	background-repeat: no-repeat;
-	height: 60px;
-	width: 60px;
-	left: 46%;
-	margin-top:100px;
-box-shadow:black;
-display: inline;
-opacity:0.2;
 }
 

@@ -6,6 +6,11 @@
     src: url("../fonts/HarryP.TTF");
 }
 
+@font-face {
+    font-family: Font0;
+    src: url("../fonts/Exo-Light.otf");
+}
+
 #loginTabWrap{
 	color: #fff;
 	font-size: 14px;
@@ -21,7 +26,7 @@
 	border-radius:3px;
 	padding: 5px;
 	margin-right: 10px;
-	
+	font-family: Font0;
 }
 
 #LoginFormContainer{
@@ -38,40 +43,66 @@
 	left:40%;
 }
 
-#loginSearchWrap{
-	width: 130px;
-	margin: 0px;
-	padding: 0px;
-	float: right;
-	display:block;
-	margin-top: 5px;
+#loginSearchWrap {
+	text-align: center;
+	clear: both;
 }
 
-.searchForm{
-	width: 130px;
-	margin: 0px;
-	padding: 0px;
-}
-.searchForm input[type=search] {
-	padding: 0px;
-	margin:0px;
+.searchForm {
 	position: relative;
-	width: 110px;
-	border-radius:0px;
+	display: inline-block;
+	margin: 3px auto;
+	float: right;
+	
+	
 }
 
+input {  outline: none }
+.searchForm input[type="text"] {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	background: transparent;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	height: 15px;
+	border: 1px solid white;
+	width: 100px;
+	padding: 3px 23px 3px 8px;
+}
 
-.searchForm input[type=submit] {
-	background-image: url("../images/search.png");
-	background-size:100% 100%;
-	background-repeat: no-repeat;
-	padding: 0px;
-	margin:0px;
+.searchForm input[type="reset"] {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAAGFBMVEUAAAC/v7+/v7+/v7+/v7+/v7+/v7+/v7+hAPa4AAAAB3RSTlMAQNCwkKDgPaU3lgAAAEZJREFUeNplj9EKACAIA2dm+/8/bkj4sI6wDsIpRCRFBprNxx4bD12LrwRSDxRZkCcoCqVDIW1v+9Q+W6sOOhNkY9iQtsIFhO0DtcbsWN0AAAAASUVORK5CYII=');
+	width: 13px;
+	height: 13px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	text-indent: -999px;
 	position: absolute;
-	width: 20px;
-	border-radius:0px;
+	right: 8px;
+	top: 6px;
+	cursor: pointer;
+	border-color: white;
+	border: 1px 1px solid
+}
 
+.searchForm input[type="text"]:invalid {
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAIVBMVEW/v7+/v78AAAC/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v79QUkolAAAAC3RSTlOLYAAJeoMjRhpOcbsbtd4AAABJSURBVHjaVc1JDsAgDATB9uAF8v8Hx0QcSN9KssZI5eClDj18PRsFlmlQDcfUGd6A3EgYP1xncQ+sa5qYOk9jRQt1Y0izhU5bL2o2AW3ZQKeJAAAAAElFTkSuQmCC) 10px 6px no-repeat;
+}
+.searchForm input[type="text"]:invalid + input[type="reset"] {
+	visibility:hidden;
+}
 
+.searchForm input[type="text"]:FOCUS{
+	width: 170px;
+	
 }
 
 #LoginFormContainer form{
@@ -266,7 +297,9 @@
 
 body{
 background: url("../images/Dock-Street-Shop-785x490.jpg")no-repeat;
-background-size:100%,100%;
+background-size:cover;
+background-position: center center;
+background-attachment: fixed;
 
 }
 .divider{
@@ -309,15 +342,17 @@ text-shadow:black;
 	display: block;
 }
 .logo{
-	position:absolute;
+	position:fixed;
+	
 	background-image: url("../images/deathly_hallows_by_amylovespenguins-d83w2f1.gif");
 	background-size:100% 100%;
 	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
+	height: 60px;
+	width: 60px;
 	left: 46%;
 	margin-top:100px;
 box-shadow:black;
 display: inline;
 opacity:0.2;
 }
+
